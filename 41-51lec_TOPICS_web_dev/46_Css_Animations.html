@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container{
+            background-color: rgb(8, 68, 88);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{ 
+            height: 45px;
+            width: 34px;
+            /* animation-name: AditiKaAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: cubic-bezier(0, 0.99, 0.58, 1);
+            animation-direction: alternate-reverse ;
+            animation-play-state: paused; */
+            /* animation: name nameduration timing-function delay iteration-count direction fill-mode; */
+            animation: AditiKaAnimation 3s ease-in-out 2s 2 alternate  ,
+                       Aditi2 3s ease-in-out 2s 2;
+
+            /* animation-fill-mode: none; =by default jesa ta ,vesa hi rahegaa!
+                                 backwards =elements pr vo styles apply honge joki set by **first keyframe**(depending on animation-direction)(jesa ta vesa hi rahega)(ani.-delay laga diya to delay se pehle hi apply ho jayengii properties first keyframe ki!!),then last goes back to original style
+                                 forwards =element will retain the style values that is set by the **last keyframe** (depending on animation-direction and animation-iteration-count)
+                                 both */
+        }
+        @keyframes AditiKaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(400px);
+                background-color: yellow; 
+            }
+        } 
+        @keyframes Aditi2 {
+            0%{
+                transform: scale(1);
+            };
+            20%{
+                transform: scale(2);
+            };
+            50%{
+                transform: scale(2.5);
+            };
+            80%{
+                transform: scale(3.5);
+            };
+            100%{
+                transform: scale(4);
+            };
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

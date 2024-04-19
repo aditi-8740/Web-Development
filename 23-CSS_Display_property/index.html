@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <!-- Changing the default(inline/Block)property of the elements -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            padding: 45px;  
+            /* NO padding from top! */
+            margin: 34px;
+            /* NO margin from top! */
+            width: 300px;
+            height: 150px;
+            
+        }
+        .box1{
+            /* display: none; */
+            /* then ye box bi gayab ho jayega aur auki occupied space bi */
+            /* visibility: hidden; */
+            /* sirf box gayab ho jayegaa(visibility:hidden) pr auski space wahi rahegi */
+
+            /* display: flex; */
+            display: inline-flex;
+            justify-content: center;
+
+        }
+        .box2{
+            /* display: grid; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">i am a box.</div>
+    <div class="box">also a nice box.</div>
+    <span>i am a good</span>
+    <span>girl and also a good human being.</span>
+</body>
+</html>

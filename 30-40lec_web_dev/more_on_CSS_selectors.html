@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        /* .box:first-child{
+            color: red;
+        } */
+
+        /* .box::first-line{
+            background-color: aquamarine;
+        } */
+
+        /* .boxes class ke andr ke sare elements pr ye apply hoga.. */
+        /* .boxes *{
+            color: blue;
+            border: 1px solid black;
+        } */
+
+        /* attribute selector */
+        /* a, p,.box , [data_margin=top]{
+            border: 1px solid black;
+            padding-top: 40px;
+        } */
+        
+        /* .box:nth-child(even){
+            color: blue;
+        } */
+
+        /* .box:nth-last-child(3){
+            color: yellow;
+        } */
+        .boxes::before{
+            content: "My name is aditi sharma";
+            color: blue;
+        }
+        .boxes::after{
+            content: "this is the ending of div whose class is boxes";
+            color: chartreuse;
+        }
+
+        /* selected elements pr styles apply kr dega.. */
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+
+        /* h1::first-letter{color: red;}
+        .box::first-letter{
+            color: aqua;
+            font-size: 35px;
+        } */
+
+        input::placeholder{
+            color: orange;
+            /* and any other properties u can add.. */
+        }
+        h1{
+            text-transform: capitalize ;
+        }
+    </style>
+</head>
+<body>
+    <h1>more on css selectors :</h1>
+    :))
+    <div class="boxes">
+        <div class="box" data_margin="top" >I am the first box Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nemo fugiat necessitatibus odit dolorem assumenda debitis facilis alias. Voluptate, omnis quisquam consequatur repellendus assumenda laudantium nesciunt perferendis aliquam! Sequi, expedita. Voluptatum odit amet excepturi.</div>
+        <div class="box">I am the second box</div>
+        <div class="box">I am the third box</div>
+        <div class="box">I am the fourth box</div>
+    </div>
+    <div>rjdvjbvfnc</div>
+    
+    <input type="text " placeholder="Type your name here">
+    
+
+</body>
+</html>

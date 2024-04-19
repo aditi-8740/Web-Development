@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float & Clear</title>
+    <style>
+        img{
+            /* float: left; */
+            float: right;
+
+        }
+        .cards{
+            border: 2px solid black;
+            /* newspapers,blogs ma use hota ta. */
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+            /* clear: both; */
+            /* right ma koi bi element float kr raha ha to ause hatao! */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=612x612&w=is&k=20&c=vikj2oQVS3BusreYqOUDxzhuFoaQBritoSWqcylTg_E=" alt="man with a boat" >
+        <!-- image agar overflow ho raha ha container ma se to wo overflow ho jata ha! -->
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis sunt temporibus non alias dignissimos fugit vero eius quia illum debitis, asperiores a quam eveniet autem accusamus cumque molestias ex explicabo magnam distinctio ipsam. </div>
+        <div class="card">
+            Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Est nesciunt quod adipisci eveniet quis velit dolor veniam iste repellat non, quaerat itaque asperiores possimus debitis obcaecati perferendis harum! Numquam modi neque est tempora totam nulla eum aliquid maiores. Non atque facilis vel error voluptatibus, hic expedita officia! Labore quae ipsam sed dicta perspiciatis doloribus atque repellat mollitia numquam iure? Magni mollitia voluptates tenetur ducimus fuga incidunt eius sit sint dolorem! Inventore voluptate dolorum sequi ullam consectetur a, reprehenderit esse pariatur earum repudiandae assumenda ipsum, natus fugiat amet hic sapiente dolor ipsam quaerat facere ab, debitis cupiditate obcaecati. Dolorem nisi est minima modi, dicta sunt ipsam, numquam sit rem iste voluptatem? Soluta sunt rerum ipsum veniam sed perspiciatis doloribus maiores eum molestiae, inventore fuga? Perferendis tempore omnis distinctio iusto, maiores quibusdam. Dicta incidunt illo voluptates, voluptatibus distinctio et autem, a explicabo doloremque cum non reprehenderit molestias sapiente officiis. Ratione, repudiandae quis corrupti earum incidunt ab nihil fuga vero ullam aspernatur id harum natus mollitia? Tempora at perferendis fugit ipsam, pariatur similique animi labore esse eveniet temporibus, placeat minima, in quia odio consequuntur cumque eligendi magnam qui minus harum numquam iure voluptatum? Porro, quasi debitis? Quos quo delectus quisquam recusandae! Excepturi, expedita dignissimos! Nostrum, ullam? Omnis, atque! Vitae, architecto, doloremque non tempore sapiente magni saepe ut iusto illum nihil, officia expedita quo accusantium eligendi exercitationem laboriosam dignissimos. Aliquam minima eaque maiores nam voluptatibus saepe laudantium incidunt. Corporis aspernatur repellendus tempore dignissimos expedita aperiam, iste nesciunt laborum cumque dolorum cum cupiditate ipsa. Facilis deleniti sed ut reiciendis dolorum earum odit nam impedit, ab, vel quisquam. Blanditiis repellat at veniam! Quam pariatur, laboriosam beatae, facere, dignissimos reprehenderit repellendus molestias alias commodi rerum suscipit aut expedita. Dicta vero ab debitis odit suscipit nam quaerat nisi mollitia, earum consequuntur facilis aperiam ratione eos doloribus est nesciunt laudantium odio dolor ipsa culpa eum exercitationem voluptatum. Amet illum, possimus at obcaecati nesciunt et labore praesentium ducimus itaque aut debitis eius. Eligendi similique perferendis quia repudiandae est harum cumque recusandae illo laboriosam!
+        </div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

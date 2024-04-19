@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        /* div{
+            color: red;
+        } */
+
+        /* group selector */
+        /* div , h1{
+            color : red;
+        } */
+
+        /* element.class selector */
+        p.container{
+            color: red;
+            background-color: rgb(42, 165, 46);
+        }
+
+        /* class selector */
+        .red{
+            color: red;
+        }
+
+        /* ID selector - particular kisi element to style karna ho, whose id is this */
+        #seconddiv{
+            background-color: blue;
+        }
+
+        /* Child selector -agar parent ka DIRECT child hoga then this properties will apply*/
+        /* div ke andar wale paragraph ka BG-color green ho jaye. */
+        div > p{            
+            background-color: yellow;
+        }
+
+        /* Descendant selector - parent ka koi bi descendent(any child) ho,the properties will apply  */
+        div p{
+            color: white;
+            background-color: green;
+        }
+
+        /* Universal selector - applies on all elements */
+        *{
+            /* color:  green; */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited{     /* the color of the link after visited will be */
+            color: yellow;
+        }
+        a:link{     /* the color() of link will be this*/
+            color: pink;
+        }
+        a:active{   /* when clicked on link ,it(a) becomes red */
+            background-color: red;
+        }
+        a:hover{
+            background-color: gray;
+        }
+        h1:hover{
+            background-color: pink;
+        }
+
+        p:first-child{  /* jaha-jaha p apne parent ka first child ha ,apply these properties (not used that much) */
+            background-color: aqua;
+        }
+        p::first-letter{
+            color: rgb(0, 149, 255);
+            /* background: black; */
+        }
+        /* p::first-line{
+             background-color: rgb(161, 30, 30); 
+        } */
+    </style>
+</head>
+<body>
+    <h1>Selectors in css :</h1>
+    <section>
+        <p>I am first child</p>
+        <p>I am second child</p>
+    </section>
+    <div class="red">
+        this is a div element. hello! everyone.to kase ha aap log?
+        <article>
+        <p>abhi muj ma kahi baki thodi si ha zindagi!jagi dadkan nayi , mana zinda hu ma ya nahi. kuch aesi lagan,eis lamhe ma ha ,vo lamha kaha ta mera? wo jo ha samne,ause huu lu zara ,marr jauu ya jee lu zaraa!khushiya chum lu ya roo lu zara ,marr jauu ya jee lu zaraa!!</p></article>
+    </div>
+    <div id="seconddiv">
+        SECOND &lt;DIV> tag here, this is another(second) div element.
+        <p>     Div> ke andar wale &lt;p> ka bg-color will be green. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut.</p>
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Go to Google </a>
+    <a href="https://www.facebo0ygdscdhvjfuvok.com" target="_blank">Go to facebook </a>
+    <p class="container"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni a quae eos placeat non neque soluta aliquam rem veritatis?</p>
+    <div class="container">ASDFsnkcjndjkvbvb</div>
+</body>
+</html>

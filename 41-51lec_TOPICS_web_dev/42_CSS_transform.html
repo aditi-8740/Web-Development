@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <!--Css Transform:
+                        1) 2D transform
+                        2) 3D transform
+        Q):- Kab use kiya jata ha ye transform property?
+        Ans):- say hide kr sakte ha kisi chezz ko, container se bahar kr sakte ha??
+
+    -->
+
+    <style>
+        .box{
+            height: 55px;
+            width: 55px;
+            background-color: beige;
+            border: 2px solid black;
+            /* DEFAULT transform origin property: 
+            transform-origin :-50%  -50% CENTER*/
+            transform-origin: 0% 0%;
+
+            transform: rotate(40deg);
+            /* transform: rotate( 0.25turn); */
+            /* transform: rotateX(90deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(90deg); */
+
+            /* transform: scale(1.5); */k
+
+            /* transform: skew(5deg); */
+            /* transform: skewX(27deg); */
+            /* transform: skewY(23deg); */
+
+            /* Come in USE!! */
+            /* transform: translate(100%); */
+            /*                   100% OF THE WIDTH */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%); */
+            
+            /* MULTIPLE translate properties to Apply!! */
+            /* transform: translateX(70px) scale(2) skewX(40deg) translateY(40%); */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

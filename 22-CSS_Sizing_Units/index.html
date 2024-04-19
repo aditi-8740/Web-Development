@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css sizing units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid brown;
+        /* width: 600px; */
+        width: 80vw; /*inline elements pr width nahi laga sakte*/
+        height: 50vh;
+        background-color: aquamarine;
+        margin: auto;
+      }
+      .box1 {
+        width: 70vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        border: 2px solid blue;
+        background-color: aqua;
+        margin: 30px auto;
+        font-size: 15px;
+      }
+      .box1 > div{
+        font-size: 2em;
+        width: 50%;
+        border: 2px solid red;
+        /* font-size: 2rem; */
+      }
+      .box1 > div >div{
+        border: 2px solid black;
+        width: 50%;
+      }
+      .mycont{
+        /* color: yellow; */
+        /* background-color: red; */
+        margin: 30px auto;
+        border: 2px solid black;
+        /* font-size: 2rem; */
+        /* width: 100vmax; =100vw */
+        /* width: 100vmin; = 100vh */
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        this is a box of heading tag &lt;div>.hello everyone .my name is aditi
+        sharma. I'm currently in my 3rd year of my engineering in computer
+        science.currently, I'm learning about web development.Till now, I have
+        learnt about HTML,and currently learning about CSS.
+      </p>
+      <p>this is the 2nd paragraph.</p>
+    </div>
+    <!-- main content! -->
+    <div class="box1">
+      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quaerat enim fugiat assumenda adipisci pariatur temporibus alias numquam earum? Rem nobis, laboriosam voluptates praesentium eius illo rerum vitae tempora, consequatur obcaecati facilis, officiis assumenda nihil iusto dolore error accusamus tenetur. Quos tenetur doloremque nostrum beatae.
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit ut odio?</div>
+      </div>
+    </div>
+
+    <div class="mycont">I am another container.</div>
+  </body>
+</html>

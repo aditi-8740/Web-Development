@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing the Grid </title>
+    <style>
+        @media only screen and (max-width:890px){
+            .container{
+                /* display: grid; */
+                grid-template-columns: auto;
+            }
+        }
+        *{margin: 0; padding: 0;}
+        .container{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            gap: 28.7px;
+            justify-items: center;
+            font-family: "Segoe UI";
+            /* align-items: end; */
+            /* margin: 16vw; */
+
+        }
+        .item{
+            width: 272px; height: 157px; box-sizing: border-box;
+            padding: 20px 14px 10px ;
+            background-color: rgb(249, 249, 249);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .item > div{
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        .first{
+            margin-bottom: 38px;
+        }
+        .downloads{
+           display: flex;
+            gap: 5px;
+            margin-bottom: 15px ;
+            
+        }
+        .button1{
+            border-radius: 5px;
+            background-color: rgb(0, 182, 209);
+            padding: 8px 15px;
+            color: white;
+            text-decoration: none;
+            
+        }
+        .button2{
+            border-radius: 5px;
+            background-color: rgb(92, 184, 92);
+            padding: 8px 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* HOVER : */
+        a.button1:hover{
+            background-color: rgba(0, 181, 209, 0.744) ;
+        }
+        a.button2:hover{
+            background-color: rgba(92, 184, 92,0.744); ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h3 class="first"> English </h3>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+         </div>
+        <div class="item">
+            <h3> Deutsch </h3>
+            <div>German</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item"> 
+            <h3> Italiano </h3>
+            <div>Italian</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> Español </h3>
+            <div>Spanish</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> français </h3>
+            <div>French</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> Português brasileiro </h3>
+            <div>Brazilian Portuguese</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> 日本 </h3>
+            <div>Japanese</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> 한국어 </h3>
+            <div>Korean</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> 中国 </h3>
+            <div>Chinese</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="item">
+            <h3> 中國 </h3>
+            <div>Traditional Chinese</div>
+            <div class="downloads">
+                <a href="ue_english.exe" class="button1">Download 32-bit</a>
+                <a href="ue_english.exe" class="button2" >Download 64-bit</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

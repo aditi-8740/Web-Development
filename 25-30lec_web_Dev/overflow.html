@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow property</title>
+    <style>
+      .box {
+        border: 2px solid red;
+        /* if height,width not set then it'll take H&W as per it's need.  */
+        width: 200px;
+        height: 200px;
+        /* Now,the content is overflowed! */
+        overflow: auto;
+        /* word-break: break-all; */
+        white-space: nowrap;
+      }
+      .box1 {
+        border: 2px solid red;
+        width: 200px;
+        height: 200px;
+        white-space: pre-wrap;
+        /* overflow: scroll; */
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      div.over_FLOWclass {
+        border: 2px solid red;
+        width: 200px;
+        height: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      /* Text-overflow with a hover effect  */
+      div.over_FLOWclass:hover {
+        overflow: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="box">
+      hello everyone. This is a paragraph. Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Doloribus dolor molestias maiores eligendi,
+      recusandae illo aut culpa enim vero assumenda aliquid? Exercitationem,
+      praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Assumenda, saepe? XYZZEND
+    </p>
+    <p class="box1">
+      this is a paragraph number2.
+      Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Earum id eius maxime hic sint amet iure ipsum, iusto
+      perspiciatis nulla et voluptatibus neque. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Possimus aliquid aut, animi consectetur
+      repellat officia ab repellendus fugiat beatae repudiandae ut molestias
+      quae!
+    </p>
+    <div class="over_FLOWclass">lkdnvj knhvb hbhf ebchdsbvh cbdshb</div>
+  </body>
+</html>

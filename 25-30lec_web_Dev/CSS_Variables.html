@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+        /* root ke ander hote/bante ha global variable. */
+        :root{
+            /* COLOR THEME: */
+            --color: rgb(255, 61, 93);
+            --secondarycolor: rgb(247, 139, 157);
+            --thirdcolor:rgb(248, 0, 0);
+
+            --defpad:50px;
+            --defopacity:0.2;
+
+            
+        }
+        /* WEBSITE = Green Theme */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: rgb(17, 220, 17); */
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            margin: 10px;
+            border: 2px solid var(--thirdcolor);
+            opacity: var(--defopacity);
+        }
+        ul li:first-child{
+            /* --color var ki value ko overwrite kr diya ha!
+            aur eis block ma overwritten value hi use hogi!! IT's a local variable */
+            /* --color: rgb(243, 50, 7); */
+            background-color: var(--color,blue);
+                                    /* fallback value */
+        }
+        .container{
+            /* background-color: rgb(110, 238, 110); */
+            background-color: var(--secondarycolor);
+        }
+    </style>
+  </head>
+  <body>
+    
+      <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </div>
+    
+    <div class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit, corporis tempora doloribus necessitatibus a blanditiis explicabo consequatur expedita suscipit, placeat beatae mollitia? Voluptas praesentium impedit ipsam nesciunt! Quasi dolorem saepe, quisquam corporis, sunt, tempore aliquam quis eligendi deleniti soluta temporibus dolorum eos quo ipsum!</div>
+  </body>
+</html>

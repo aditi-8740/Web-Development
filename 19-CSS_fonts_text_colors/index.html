@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_fonts_text_color_properties</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1{
+            font-family: "Poppins" ,sans-serif;
+            /* 'Baloo Bhai 2' */
+            font-size: 38px;    /*Normally, H1 tag takes 32px*/
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            text-decoration-style: solid;
+            text-decoration-thickness:8px;
+            text-indent: 45px;  /*gives indentation to text*/
+            text-align: center;
+        }
+        p{
+            font-family: "Poppins",sans-serif ,Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 20px;    /*by default, p tag has 16px*/
+            /* text-decoration:overline; */
+            line-height: 2;
+            letter-spacing: 2px;
+        }
+        /*used in Blogs lots of times*/
+        .lorem{
+            border: 5px solid red;
+            width: 145px;
+            height:200px;
+            text-overflow: ellipsis ;
+            word-break: break-all;
+            overflow:hidden ;
+            /*      :scroll */
+        }
+    </style>
+</head>
+<body>
+    <h1>toPIC : fonts</h1>
+    <p>In this video,I'm learning about fonts,texts and color properties. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque odio incidunt odit quos? Necessitatibus ratione delectus deleniti eaque eveniet fuga sapiente sit illum. Vero delectus odio omnis consequatur. Suscipit eius, pariatur mollitia consequatur est minus sint voluptas laborum? Quam fugit eum sunt voluptatum iure aspernatur quia odio recusandae amet. Corporis, praesentium neque numquam laudantium aliquam nesciunt omnis error debitis soluta sit, iure pariatur iusto quisquam, expedita explicabo ad! Recusandae impedit odit ab exercitationem minima quibusdam sapiente cum voluptatem rerum repellat, architecto ea veritatis sit omnis tempore commodi atque voluptatum libero asperiores iusto accusantium dicta culpa alias perspiciatis? Mollitia, dolore quod.</p>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sapiente ad ab temporibus alias, deleniti culpa nostrum praesentium ducimus. Maxime sapiente, quis quo eum quam, hic volupt</p>
+</body>
+</html>

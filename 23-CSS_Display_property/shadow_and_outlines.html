@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadows and outlines</title>
+    <style>
+        /* SHADOWS in CSS :  (use zyada nahi hota ha,sometimes hota ha,& you should know about this property!)
+        => box-shadow: h-offset v-offset blur spread color inset;
+        => text-shadow: h-offset v-offset blur color;
+        OUTLINES in CSS :
+        => outline: width style color; (syntax just like border) 
+        Border & outline are diff.*/
+        .box{
+            border: 7px solid black;
+            border-radius: 51px;
+            padding: 34px; margin:40px;
+            /* box-shadow: 11px 8px 15px 2px rgb(254, 31, 31) ; */
+            outline: 7px solid red;
+            outline-offset:10px ;
+        }
+        .text_shadow{
+            text-shadow: 6px 4px 3px grey;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box.
+    </div>
+    <p class="text_shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis odit nostrum, fugiat est ut enim in aliquam at nihil, iste, minima maiores magni saepe assumenda numquam accusamus ab optio sint aliquid qui soluta quaerat!</p>
+</body>
+</html>

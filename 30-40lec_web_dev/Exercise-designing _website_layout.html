@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise- Designing Website layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        :root{
+            /* Green Theme */
+            --color1: rgb(161, 218, 49);
+            --color2: rgb(197, 225, 142);
+        }
+        body{
+            background-color: var(--color2);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color: var(--color1);
+            
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            padding: 15px 10vw;
+            border: 2px solid black;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+
+        .parentbox{
+            border: 1px solid black;
+            margin: 20px;
+            background-color: rgb(124, 155, 60);
+        }
+        .box{
+            display: inline-block;
+            border: 1px solid black;
+            margin: 60px 8vw;
+            width: 30vw;
+            height: 50vh;
+            background-color: rgb(84, 104, 39);
+        }
+        .introcall{
+            border: 2px solid black;
+            border-radius: 40px;
+            height: 30vh;
+            width:75vw;
+            margin:0 10vw;
+        }
+        img{
+            border-radius: 50%;
+            width: 150px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        footer{
+            background-color: white;
+            margin-top: 70vh;
+            height: 8.5vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="/">About Us</li></a>
+                <li><a href="/">Services</li></a>
+                <li><a href="/">Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parentbox">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="introcall"></div>
+        <div>
+            <img src="https://c.saavncdn.com/730/Chennai-Super-Kings-Anthem-Tamil-2023-20230516151615-500x500.jpg" alt="csk logo">
+        </div>
+    </main>
+    <footer>
+sdfghjkm
+    </footer>
+</body>
+</html>
