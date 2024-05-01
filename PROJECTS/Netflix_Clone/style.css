@@ -1,0 +1,308 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,sans-serif;
+}
+
+.main {
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/c7f07b68-7989-4ff7-a31e-11c17dcc2fea/fcf685b8-3f9f-42d8-9af3-4bb86fa5a3b8/IN-en-20240422-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: max(1000px, 100vw);
+    /* background-size: 100vw; */
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* filter: brightness(48%); instead of Dummy box */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80vw;
+    height: 47px;
+    margin: auto;
+   
+}
+
+.netflixLOGO {
+    /* height: 6vh; */
+    position: relative;
+    z-index: 1;
+    width: 140px;
+}
+
+nav>div {
+    /* buttons-English & SignIn */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+}
+
+/* DUMMY BOX */
+.main .black_box {
+    height: 100vh;
+    width:100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 72%    ;
+}
+
+.CenterContent {
+    position: relative;
+    z-index: 1;
+    /* margin-top: 20vh;
+    margin-bottom: 20vh;  zarurat nahi ha margin ki!*/
+    height: calc(100% - 87px);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    /* Below both are important! if u can't understand about them,just simply see by removing them one at a time. and resizing screen size  */
+    padding: 0 35px;
+    text-align: center;   
+}
+
+/* .CenterContent>h1 { */
+    .CenterContent> :first-child{
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 3em;
+}
+.main-lines{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.CenterContent> :nth-child(2) {
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+hr{
+    border: 5px solid #58585819;
+    border-radius: 5px;;
+}
+
+.btn{
+    padding: 9px 14px    ;
+    color:white;
+    background-color: rgba(36, 36, 36, 0.499);
+    border-radius: 3px;
+    font-weight: 600;
+}
+.btn>a{
+    color: white;   
+    text-decoration: none;
+}
+.SignIn-btn-red{
+    background-color: red;
+    border: none;
+}
+.Start-btn-red{
+    background-color: rgba(255, 0, 0, 0.796);
+    border: none;
+    padding:11px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.Start-btn-red:hover{
+    background-color: rgba(255, 0, 0, 0.686);
+}
+.email_button{
+    border: 1px solid grey;
+    padding:15px 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+/* Mobile pr kya hoga? */
+.features{
+    margin: 10px auto 20px auto ;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 670;
+}
+.features>div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    height:80px;
+    padding: 20px;
+    border-radius: 14px;
+    background-image: linear-gradient(135deg, rgb(4, 4, 26),rgb(36, 20, 47));
+}
+.features>div>svg{
+    margin-left: auto;
+    margin-top: auto;
+}
+section > h2{
+    margin: 10px auto 20px auto ;
+    width: 90vw;
+}
+.FAQs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 95vw;
+    margin: 10px 30px 20px;  
+}
+.FAQs>h2{
+margin-top: 30px;
+}
+/* laptop pr kya hoga! */
+@media ( min-width: 959px) {
+    .features{
+        flex-direction: row;
+        /* background-color: white; */
+        margin: 10px auto 20px auto ;
+        width: 75vw;
+    }
+    .features>div{
+        height: 240px;
+        font-size: 2rem;
+        width: 20vw;
+    }
+    section > h2{
+        margin: 10px auto 20px auto ;
+        width: 75vw;
+    }
+    .FAQs{
+        margin-left: 160px  ;
+        margin-top: 40px;
+        max-width: 60vw;
+    }
+}
+.FAQ-box{
+    display: flex;
+    align-items: center;
+    /* gap: 10px; will not work here */
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 25px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+.FAQ-box:hover{
+    background-color: rgb(69, 69, 69);
+    
+}
+.membership-end{
+    margin: 10px 140px 20px ;
+    text-align: center;
+}
+.ready-to-watch{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 65px;
+    padding: 0 15px;
+}
+.bottom{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 160px 100px ;
+    font-size: 14px;
+}
+.number>a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.number{
+    margin: 25px 0;
+    font-size: 16px;
+}
+.grid{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+.grid>p>a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.grid>p{
+    padding-top: 10px;
+}
+.bottom> p:last-child{
+    margin-top:25px ;
+}
+@media ( max-width: 599px) {
+    .grid{
+        grid-template-columns: auto;
+
+    }
+    .bottom{
+        margin: 10px 50px 100px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .membership-end{
+        margin: 10px auto 20px ;
+        text-align: center;
+    }
+    .netflixLOGO {
+        width: 100px;
+    }
+    .btn {
+        padding: 2px 7px ;
+    }
+    nav>div {
+        /* buttons-English & SignIn */
+        display: flex;
+        gap: 5px;
+    }
+    nav{
+        gap: 15px;
+    }
+    .Start-btn-red{
+        font-weight: 500;
+        padding:11px 20px;
+    }
+    .email_button{
+        padding:15px 40px;
+        width: 60vw;
+    }
+    .FAQs{
+        font-size: 14px;
+    }
+}
+@media ( max-width: 1000px) {
+    .CenterContent> :first-child{
+        font-weight: 800;
+        font-size: 32px;
+    }
+    .CenterContent> :nth-child(2) {
+        margin-bottom: 18px;
+    }
+}
+@media ( max-width: 959px) and (min-width: 600px) {
+    .grid{
+        grid-template-columns: auto auto;
+    }
+    
+}
+@media ( max-width: 1279px) and (min-width:960px) {
+    .grid{
+        grid-template-columns: auto auto auto;
+    }
+}
+/* 127.0.0.1 */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectFit and ObjectCover</title>
+    <style>
+        .container{
+            height: 334px;
+            width: 388px;
+            border: 2px dotted black;
+            background-color: azure;
+            background-image: url(https://media.istockphoto.com/id/636379014/photo/hands-forming-a-heart-shape-with-sunset-silhouette.jpg?s=612x612&w=0&k=20&c=CgjWWGEasjgwia2VT7ufXa10azba2HXmUDe96wZG8F0=);
+            background-position: center center;
+            background-clip: content-box ;
+                            /* padding-box ,border-box(default) */
+
+            /* SMALL Image:  x/y ma chooti ho to image gets repeat(by default)*/
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScGpmv8zY3KrLod182LoBBQdFTwTkzYeMF0i30hbsosSTEvuCLYKcns5WQDsk6Qk5TnvY&usqp=CAU);
+            background-repeat: no-repeat; */
+                        /*   :  repeat-x 
+                             :  repeat 
+                             : repeat-y ; */
+                            
+            
+        }
+        img{
+            width: 388px;
+            height: 334px;
+            /* object-fit:contain ; */
+                        /* : fill(by default)=> jitni H-width di ha vo lg jayegi!DISTORTED IMAGE
+                                image will be stretched or squished to fit 
+                        : scaledown => the image is scaled down to the smallest version of none or contain 
+                        : none
+                        :cover => cover kr lega aus height-width ma IMAGEko,image ka kuch portion katt ho jayega*/
+            /* object-fit: cover ; */
+            /* object-position: top right; */
+            /* object-position: 10px 10px; */
+                       
+
+            
+
+            /* image kich si jaati ha! Eiski Quality,image-ratio(2:1 ya 4:1 ha??) maintain nahi rehtii!!*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">dfcgvhbjnmk  jn bh 
+        <!-- <img src="https://media.istockphoto.com/id/636379014/photo/hands-forming-a-heart-shape-with-sunset-silhouette.jpg?s=612x612&w=0&k=20&c=CgjWWGEasjgwia2VT7ufXa10azba2HXmUDe96wZG8F0=" alt="childhood photo"> -->
+        hello enjhbdh
+    </div>
+</body>
+</html>

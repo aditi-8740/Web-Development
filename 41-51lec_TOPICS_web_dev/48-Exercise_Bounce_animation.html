@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXERCISE-Bounce animation</title>
     <style>
-        .container{
-            position: relative;
-            background-color: blue;
-            width: 80vw;
-            height: 70vh; 
-        }
-        .box{
-            background-color: red;
-            width: 100px; height: 100px;
-            border-radius: 70px;
-            /* position: relative;
+      .container {
+        position: relative;
+        background-color: blue;
+        width: 80vw;
+        height: 70vh;
+      }
+      .box {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        /* position: relative;
             bottom: -43vh; another way of doing it perfectly!*/
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            /* animation: bounceX 4s linear 1s 1 normal forwards ,
-                       bounceY 1s ease-out 1s 4 alternate forwards; */
-                       animation: bounce 1s ease-out 1s 4 alternate forwards;
-        }   
-        @keyframes bounce {
-            from{
-                transform: translate(0);
-            }
-            to{
-                transform: translate(100px);
-            }
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: bounceX 6s ease-out 1s 1 normal forwards ,
+                       bounceY 1s ease-out 1s 6 alternate forwards;
+      }
+      @keyframes bounceX {
+        from {
+          /* transform: translateX(0); */
         }
-        @keyframes bounceX{ 
-            from{
-                /* transform: translateX(0); */
-            }
-            to{
-                transform: translateX(1000px);
-            }
+        to {
+          transform: translateX(1000px);
         }
-        @keyframes bounceY{ 
-            from{
-                /* bottom: 0; */
-            }
-            to{
-                /* transform: translateY(-200px); yaha par translatey() kaam nahi kr raha!*/
-                bottom: 200px;
-            }
+      }
+      @keyframes bounceY {
+        from {
+          bottom: 0;
         }
+        to {
+          bottom: 200px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box"></div>
+      <div class="box"></div>
     </div>
-</body>
+  </body>
 </html>

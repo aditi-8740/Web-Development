@@ -6,38 +6,38 @@
     <title>Css transition property</title>
     <style>
         .container{
-            background-color: antiquewhite;
-            width: 50vw;
-            height: 40vh;
+            background-color: rgb(254, 204, 138);
+            width: 600px;
+            height: 260px;
         }
         .box{
             background-color: aquamarine;
-            width: 5vw;
-            height: 4vh;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
             transition-property: transform,background-color ;
             transition-duration: 3s;
-            transition-timing-function: cubic-bezier(0, 1.1, 0.58, 1);
+            transition-timing-function: ease-out;
             transition-delay: 1s;
 
         }
-        .translate{
-            transform: translateX(10vw) translateY(10vh) scale(3);
+        .translate_property{
+            transform: translateX(200px) translateY(100px) scale(3);
             background-color: blue; 
         }
         div.div_hover:hover{
             width: 60px;
+            background-color: yellowgreen;
         }
         div.div_hover{
-            background-color: yellowgreen;
-            width: 30px;height: 40px;
             transition: width  2s cubic-bezier(0, 1.35, 0.58, 1);
         }
     </style>
 </head>
 <body>
     <div class="container ">
-        <div class="box translate"></div>
-        <div class="div_hover"></div>
+        <div class="box translate_property">1</div>
+        <div class=" box div_hover">2</div>
     </div>
 </body>
 </html>
